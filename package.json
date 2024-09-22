@@ -4,5 +4,24 @@
     "cors": "^2.8.5",
     "express": "^4.21.0",
     "http-status": "^1.7.4"
-  }
+  },
+  "name": "be",
+  "description": "## Packages used in this app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2",
+    "@babel/node": "^7.25.0",
+    "@babel/preset-env": "^7.25.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node api/index.js",
+    "dev": "babel-node api/index.js",
+    "build": "babel api -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
