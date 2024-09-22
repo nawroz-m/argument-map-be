@@ -7,6 +7,7 @@ const PATH = "/";
 
 // configure a middleware to parse the request body
 middlewarConfig(app);
+app.use(PATH, publicRouter);
 
 app.listen(PORT, (err) => {
   if (err) console.log(`Server is stoped due to ${err}`);
