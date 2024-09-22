@@ -3,7 +3,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.0",
-    "http-status": "^1.7.4"
+    "http-status": "^1.7.4",
+    "nodemon": "^3.1.7"
   },
   "name": "be",
   "description": "## Packages used in this app",
@@ -17,7 +18,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node api/index.js",
+    "start": "nodemon api/index.js",
     "dev": "babel-node api/index.js",
     "build": "babel api -d dist"
   },
